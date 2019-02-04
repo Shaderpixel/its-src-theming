@@ -137,7 +137,7 @@
             <fieldset>
                 <legend class="dcf-legend">Billing Details</legend>
 
-                <div class="dcf-d-flex dcf-form-group">
+                <div class="dcf-d-flex dcf-form-group dcf-input-group dcf-ai-baseline">
                     <label for="full-name-input" id="full-name-label" class="dcf-label">Name: </label>
                     <input type="text" name="name" value="" placeholder="Enter your Name"
                            id="full-name-input"
@@ -150,7 +150,7 @@
                             </span>
                 </div>
 
-                <div class="dcf-d-flex dcf-form-group" disabled>
+                <div class="dcf-d-flex dcf-form-group dcf-input-group dcf-ai-baseline" disabled>
                     <label for="full-name-input" id="email-label" class="dcf-label">Email: </label>
                     <input type="email" name="name" value="" tabindex="1" placeholder="email@emailaddress.com"
                            id="email-input"
@@ -164,33 +164,33 @@
                             </span>
                 </div>
 
-                <div class="dcf-d-flex dcf-form-group dcf-input-group-form dcf-ai-flex-start">
-                    <label for="position" id="position-level" class="dcf-label">I identify myself as a UNK:<sup class="dcf-required">*</sup>
+                <div class="dcf-d-flex dcf-form-group dcf-input-group-form dcf-ai-baseline">
+                    <label for="position" id="position-level">I identify myself as a UNK:<sup class="dcf-required">*</sup>
                     </label>
                     <fieldset id="Position" name="Position" aria-labelledby="position-level"
                               class="dcf-d-flex dcf-flex-col">
                         <legend class="dcf-legend">Position</legend>
                         <div class="dcf-input-radio">
                             <input id="student_Position" name="Position" type="radio" value="student">
-                            <label for="student_Position" class="dcf-label">student</label>
+                            <label for="student_Position">student</label>
                         </div>
                         <div class="dcf-input-radio">
                             <input id="faculty_member_Position" name="Position" type="radio"
                                    value="faculty member">
-                            <label for="faculty_member_Position"  class="dcf-label">faculty member</label>
+                            <label for="faculty_member_Position" >faculty member</label>
                         </div>
                         <div class="dcf-input-radio">
                             <input id="administrator_Position" name="Position" type="radio" value="administrator">
-                            <label for="administrator_Position" class="dcf-label">administrator</label>
+                            <label for="administrator_Position">administrator</label>
                         </div>
                         <div class="dcf-input-radio">
                             <input id="staff_member_Position" name="Position" type="radio"
                                    value="staff member">
-                            <label for="staff_member_Position" class="dcf-label">staff member</label>
+                            <label for="staff_member_Position">staff member</label>
                         </div>
                         <div class="dcf-input-radio">
                             <input id="other_Position" name="Position" type="radio" value="other">
-                            <label for="other_Position" class="dcf-label">other</label>
+                            <label for="other_Position">other</label>
                         </div>
                     </fieldset>
                 </div>
@@ -201,7 +201,7 @@
                     <textarea cols="25" id="comments" name ="comments" rows="5" class="dcf-input-text-area"></textarea>
                 </div>
 
-                <div class="dcf-d-flex dcf-form-group">
+                <div class="dcf-d-flex dcf-form-group dcf-input-group dcf-ai-baseline">
                     <label for="Student_Profile" id="Student_Profile_Label" class="dcf-label">Students' Grade
                         at Time of
                         Visit:<sup
@@ -217,6 +217,9 @@
                         <option value="8th Grade">8th Grade</option>
                         <option value="Combination of Grades">Combination of Grades</option>
                         <option value="Current College Students">Current College Students</option>
+                        <option value="Current College Students">Current College Students Current College Students
+                            Current College Students Current College Students Current tomato College StudentsCurrent
+                            College Students</option>
                         <option value="Other">Other</option>
                     </select>
 
@@ -230,7 +233,7 @@
                                aria-labelledby="elements-form-checkboxA-label">
                         <label for="elements-form-checkboxA"
                                id="elements-form-checkboxA-label"
-                               class="dcf-label">
+                              >
                             Checkbox A
                         </label>
                     </div>
@@ -239,7 +242,7 @@
                                aria-labelledby="elements-form-checkboxB-label" disabled>
                         <label for="elements-form-checkboxB"
                                id="elements-form-checkboxB-label"
-                               class="dcf-label">
+                              >
                             Checkbox B
                         </label>
                     </div>
@@ -248,40 +251,41 @@
                                aria-labelledby="elements-form-checkboxC-label">
                         <label for="elements-form-checkboxC"
                                id="elements-form-checkboxC-label"
-                               class="dcf-label">
+                              >
                             Checkbox C
                         </label>
                     </div>
                 </fieldset>
 
-                <div class="dcf-d-flex dcf-form-group">
+                <div class="dcf-d-flex dcf-form-group dcf-ai-baseline">
                     <label for="example-elements-form-datetime-flatpickr">Date/time: </label>
                     <input id="example-elements-form-datetime-flatpickr" data-widget="flatpickr" type="text" class="flatpickr"
                            placeholder="Select Date & Time.."
                            readonly="readonly">
                 </div>
 
-                <div class="dcf-d-flex dcf-form-group">
+                <div class="dcf-d-flex dcf-form-group dcf-ai-baseline">
                     <label for="elements-form-input-file"
                            id="elements-form-input-file-label"
-                           class="dcf-label">
+                           class="dcf-label"
+                          >
                         File input
                     </label>
                     <input id="elements-form-input-file" type="file"
                            aria-labelledby="elements-form-input-file-label" class="dcf-input-file">
                 </div>
 
-                <div class="dcf-d-flex dcf-form-group">
+                <div class="dcf-d-flex dcf-form-group dcf-ai-baseline">
                     <label for="elements-form-input-range"
                            id="elements-form-input-range-label"
-                           class="dcf-label">
+                          >
                         Range Slider
                     </label>
                     <input id="elements-form-input-range" type="range"
                            aria-labelledby="elements-form-input-range-label" class="dcf-input-range">
                 </div>
 
-                <div class="dcf-d-flex dcf-form-group">
+                <div class="dcf-d-flex dcf-form-group dcf-ai-center">
                     <label for="tasks_comp">
                         Tasks Completed:</label>
                     <progress class="dcf-input-progress" value="50" max="100" id="tasks_comp"></progress>

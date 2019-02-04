@@ -6,13 +6,14 @@
 .unk .dcf-input-checkbox {
 	position: relative;
 	@include pl-6;
-	@include mb-2;
+	@include mb-3;
 
 
 	input[type="checkbox"] {
 		position: absolute;
 		cursor: pointer;
-		top: 0;
+		top: 50%;
+		transform: translateY(-50%);
 		left: 0;
 		width: $length-em-7; // slightly wider to avoid hover state gaps between the label::before and the label
 		height: $length-em-6;
@@ -31,7 +32,8 @@
 	label::before, label::after {
 		content: '';
 		position: absolute;
-		top: 0;
+		top: 50%;
+		transform: translateY(-50%);
 		left: 0;
 	}
 
@@ -54,14 +56,14 @@
 		border-top-color: transparent;
 		width: $length-em-4;
 		height: $length-em-2;
-		transform: rotate(-45deg) translate(-0.15em, 0.7em) scale(0);
+		transform: rotate(-45deg) translate(0.55em, 0em) scale(0);
 		transition: transform $hover-on;
 	}
 
 
 	// display checkmark
 	input[type="checkbox"]:checked + label::after {
-		transform: rotate(-45deg) translate(-0.15em, 0.7em) scale(1);
+		transform: rotate(-45deg) translate(0.55em, 0em) scale(1);
 	}
 
 
