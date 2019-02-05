@@ -43,6 +43,13 @@
 }
 
 
+// Form group and form with input group
+//.unk .dcf-form-group,
+//.unk .dcf-input-group-form {
+//  margin-top: -#{ms(-12)}em; // Apply negative margin-top to equalize label margin-top
+//}
+
+
 // Label
 .unk .dcf-form-group[disabled] label {
 	cursor: not-allowed !important;
