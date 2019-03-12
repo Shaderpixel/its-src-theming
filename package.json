@@ -77,7 +77,7 @@
     "bootstrap-sass": "^3.3.7",
     "browser-sync": "^2.26.0",
     "chalk": "^1.1.3",
-    "dcf": "git+https://github.com/d-c-n/dcf.git",
+    "dcf": "git+https://github.com/d-c-n/dcf.git#8e21fb9798c13d6f8bfe6f098520fbddd1e04f3d",
     "del": "^3.0.0",
     "fancy-log": "^1.3.2",
     "gulp": "^4.0.0",
