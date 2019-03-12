@@ -1,0 +1,69 @@
+//////////////////////////////
+// !THEME / COMPONENTS / FORMS
+//////////////////////////////
+
+
+// Form group:
+.unk .dcf-form-group {
+  @include mb-5;
+}
+
+// Label
+.unk input[disabled] ~ label,
+.unk .dcf-form-group[disabled] label {
+	cursor: not-allowed !important;
+	opacity: .7;
+}
+
+
+// Input: Text
+.unk .dcf-form input:not([type="submit"]):hover,
+.unk .dcf-form textarea:hover {
+	border-color: $color-border-input-hover;
+	box-shadow: inset 0 1px 2px fade-out($color-border-input-hover,.5);
+	transition: border-color $hover-on, box-shadow $hover-on;
+}
+
+
+.unk .dcf-form input:not([type="submit"]):focus,
+.unk .dcf-form textarea:focus {
+	border-color: $color-border-input-focus;
+	outline: none;
+}
+
+
+// Input: File
+.unk .dcf-input-file {
+	border-radius: $roundrect;
+	border: 1px solid;
+	border-color: $color-border;
+	width: 100%;
+}
+
+
+// Required
+.unk .dcf-required {
+  color: $red;
+  @include txt-xs;
+  @include pl-1;
+}
+
+// Input: Submit
+.unk .dcf-input-submit {
+	background-color: $color-button;
+	border-color: $color-border;
+	text-transform: uppercase;
+	min-width: min-content;
+	max-width: 50vw;
+}
+
+
+// Input: Range
+
+
+// Form Help
+.unk .dcf-form-help {
+  color: $color-light-text;
+  @include txt-xs;
+  @include mt-1;
+}
